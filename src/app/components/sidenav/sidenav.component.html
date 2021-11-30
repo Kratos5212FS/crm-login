@@ -1,0 +1,16 @@
+<ul class="nav flex-column bg-primary">
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/customers">
+        <i class="fas fa-user"></i> 
+        Customers
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/contacts">
+        <i class="fas fa-envelope"></i> 
+        Contacts
+      </a>
+    </li>
+    <button *ngIf="isLoggedIn" (click)="logout()">LogOut</button>
+  </ul>
+  

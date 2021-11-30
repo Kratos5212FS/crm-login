@@ -1,0 +1,22 @@
+@media (min-width: 992px) {
+    ul.nav {
+      height: 100vh;
+    }
+
+}
+button{
+    width: 50px !important;
+    background-color: rgb(0, 45, 112);
+    color: white;
+    margin-top: 10px;
+}
+
+a:hover{
+    background-color: lightblue !important;
+    color: black !important;
+}
+
+a:focus{
+    background-color: blue !important;
+    color: white !important;
+}

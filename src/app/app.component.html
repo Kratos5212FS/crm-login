@@ -1,0 +1,27 @@
+<header>
+  <app-topnav *ngIf="isLoggedIn"></app-topnav>
+</header>
+<main>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 px-0">
+        <app-sidenav *ngIf="isLoggedIn"></app-sidenav>
+        
+      </div>
+      <div class="col-lg-10">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- <div class="sidenav" *ngIf="isLoggedIn">
+  <a routerLink="customers">Customers</a>
+  <a routerLink="contacts">Contacts</a>
+  <button *ngIf="isLoggedIn" (click)="logout()">LogOut</button>
+</div>
+
+<div class="main">
+  <router-outlet> </router-outlet>
+</div> -->
